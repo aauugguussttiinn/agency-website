@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from 'Context/ThemeContext';
 
 const ToggleButton = () => {
+  const {toggleTheme, theme} = useContext(ThemeContext)
+  
   return (
     <div className="toggleWrapper">
-      <input type="checkbox" className="dn" id="dn"/>
-      <label for="dn" className="toggle">
+      <input onClick={ toggleTheme } type="checkbox" className={theme ? "dn tolight" : "dn todark" } id="dn"/>
+      <label htmlFor="dn" className="toggle">
         <span className="toggle__handler">
           <span className="crater crater--1"></span>
           <span className="crater crater--2"></span>
@@ -18,28 +21,7 @@ const ToggleButton = () => {
         <span className="star star--6"></span>
       </label>
     </div>
-    // <div className="toggle-switch">
-    //   <input
-    //     type="checkbox"
-    //     className="toggle-switch-checkbox"
-    //     name="dark-light-switch"
-    //     id="dark-light-switch"
-    //   />
-    //   <label className="toggle-switch-label" htmlFor="dark-light-switch">
-    //     <span className="toggle-switch-inner" />
-    //     <span className="toggle-switch-switch" />
-    //   </label>
-    // </div>
   );
 };
 
 export default ToggleButton;
-
-
-// const ToggleButton = () => {
-//   return (
-//     <div className="toggle-button">
-//       <p>dd</p>
-//     </div>
-//   );
-// };

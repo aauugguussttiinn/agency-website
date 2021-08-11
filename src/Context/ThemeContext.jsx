@@ -8,6 +8,7 @@ const ThemeContextProvider = (props) => {
 
   const toggleTheme = () => {
     setTheme(!theme);
+    console.log(theme)
   };
   
   return (

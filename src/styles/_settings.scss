@@ -15,9 +15,6 @@ $color-4: rgb(32, 35, 42);
 body {
   margin: 0.4rem auto;
   max-width: 1296px;
-  // font-family: $font-1;
-  // color: $color-3;
-  // background-color: $color-2;
 }
 li {
   list-style-type: none;
@@ -32,19 +29,13 @@ a:visited {
 }
 
 .maintheme.tolight {
-  body {
     font-family: $font-1;
     background-color: #f1f1f1;
     color: #333333;
-  }
-
 }
 
 .maintheme.todark {
-  body {
     font-family: $font-1;
     background-color: #333333;
     color: #f1f1f1;
-  }
-
 }
