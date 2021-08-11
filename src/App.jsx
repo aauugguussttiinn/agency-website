@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from 'pages/Home/Home';
 import About from 'pages/About/About';
 import Works from 'pages/Works/Works';

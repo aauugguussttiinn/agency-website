@@ -9,17 +9,15 @@ const ThemeContextProvider = (props) => {
   const [theme, setTheme] = useState(localStorage.getItem(`theme`) || false );
 
   const toggleTheme = () => {
-    // localStorage.setItem('theme', theme);
     setTheme(!theme);
     console.log(theme);
-    // localStorage.setItem('theme', theme);
   };
 
   useEffect(
     () => {
       localStorage.setItem('theme', theme);
     },
-    [toggleTheme]
+    [toggleTheme, theme]
   );
   
   return (
