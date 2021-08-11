@@ -1,14 +1,12 @@
 import React, { useContext } from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom"
-// import ThemeContextProvider from 'Context/ThemeContext';
 import Home from 'pages/Home/Home';
 import About from 'pages/About/About';
 import Works from 'pages/Works/Works';
-import NotFound from 'pages/NotFound/NotFound';
+// import NotFound from 'pages/NotFound/NotFound';
 import { ThemeContext } from "Context/ThemeContext";
 
 const App = () => {
-  // console.log(ThemeContext);
   const { theme } = useContext(ThemeContext);
   console.log(theme);
 
