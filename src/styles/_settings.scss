@@ -28,14 +28,18 @@ a:visited {
 
 .maintheme.tolight {
   height: 100vh;
-    font-family: $font-1;
-    background-color: $color-6;
-    color: $color-2;
+  font-family: $font-1;
+  background-color: $color-6;
+  color: $color-2;
+
+  .header {
+    background-color: $color-4;
+  }
 }
 
 .maintheme.todark {
   height: 100vh;
-    font-family: $font-1;
-    background-color: $color-2;
-    color: $color-6;
+  font-family: $font-1;
+  background-color: $color-2;
+  color: $color-6;
 }
