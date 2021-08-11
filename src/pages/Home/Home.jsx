@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from "components/Navigation/Navigation";
+import Header from "components/Header/Header";
 import Presentation from "components/Presentation/Presentation";
 // import Logo from 'components/Logo/Logo';
 
@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="home">
       {/* <Logo /> */}
-      <Navigation />
+      <Header />
       <Presentation />
     </div>
   );
