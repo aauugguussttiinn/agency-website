@@ -18,7 +18,7 @@
   position: relative;
   width: 63px;
   height: 35px;
-  background-color: #83D8FF;
+  background-color: #749DD6;
   border-radius: 90px - 6;
   transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
   
@@ -46,7 +46,7 @@
   left: 3px;
   width: 35px - 4;
   height: 35px - 4;
-  background-color: #FFCF96;
+  background-color: #FFE5B5;
   border-radius: 50px;
   box-shadow: 0 2px 6px rgba(0,0,0,.3);
   transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -55,7 +55,7 @@
   .crater {
     position: absolute;
     background-color: #E8CDA5;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 200ms ease-in-out;
     border-radius: 100%;
   }
@@ -90,39 +90,39 @@
 }
 
 .star--1 {
-  top: 9px;
-  left: 13px;
+  top: 11px;
+  left: 37px;
   z-index: 0;
-  width: 30px;
-  height: 3px;
+  width: 2px;
+  height: 2px;
 }
 
 .star--2 {
   top: 18px;
-  left: 26px;
+  left: 42px;
   z-index: 1;
-  width: 30px;
-  height: 3px;
+  width: 4px;
+  height: 4px;
 }
 
 .star--3 {
   top: 6px;
-  left: 30px;
+  left: 50px;
   z-index: 0;
-  width: 30px;
-  height: 3px;
+  width: 2px;
+  height: 2px;
 }
     
 .star--4,
 .star--5,
 .star--6 {
-  opacity: 0;
+  opacity: 1;
   transition: all 300ms 0 cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .star--4 {
   top: 16px;
-  left: 5px;
+  left: 54px;
   z-index: 0;
   width: 2px;
   height: 2px;
@@ -131,7 +131,7 @@
 
 .star--5 {
   top: 24px;
-  left: 13px;
+  left: 47px;
   z-index: 0;
   width: 3px;
   height: 3px;
@@ -140,7 +140,7 @@
 
 .star--6 {
   top: 28px;
-  left: 28px;
+  left: 37px;
   z-index: 0;
   width: 2px;
   height: 2px;
@@ -149,7 +149,7 @@
 
 input:checked {
   + .toggle {
-    background-color: #749DD6;
+    background-color: #83D8FF;
   
     &:before {
       color: #749ED7;
@@ -160,33 +160,36 @@ input:checked {
     }
     
     .toggle__handler {
-      background-color: #FFE5B5;
+      background-color: #FFCF96;
       transform: translate3d(27px, 0, 0) rotate(0);
   
-      .crater { opacity: 1; }
+      .crater {
+        opacity: 0;
+      }
     }
     
     .star--1 {
-      width: 2px;
-      height: 2px;
+      width: 30px;
+      height: 3px;
+      transform: translate3d(-14px, 0, 0);
     }
     
     .star--2 {
-      width: 4px;
-      height: 4px;
-      transform: translate3d(-5px, 0, 0);
+      width: 30px;
+      height: 3px;
+      transform: translate3d(-28px, 0, 0);
     }
     
     .star--3 {
-      width: 2px;
-      height: 2px;
-      transform: translate3d(-7px, 0, 0);
+      width: 30px;
+      height: 3px;
+      transform: translate3d(-45px, 0, 0);
     }
     
     .star--4,
     .star--5,
     .star--6 {
-      opacity: 1;
+      opacity: 0;
       transform: translate3d(0,0,0);
     }
     .star--4 {

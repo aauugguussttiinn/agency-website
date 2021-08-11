@@ -10,7 +10,6 @@ const ThemeContextProvider = (props) => {
   const toggleTheme = () => {
     setTheme(!theme);
     console.log(theme);
-    // localStorage.setItem('currenttheme', theme);
   };
   
   return (
@@ -21,3 +20,23 @@ const ThemeContextProvider = (props) => {
 };
 
 export default ThemeContextProvider;
+
+// const ThemeContextProvider = (props) => {
+
+
+//   const [theme, setTheme] = useState(localStorage.getItem(`theme`) || false );
+
+//   const toggleTheme = () => {
+//     setTheme(!theme);
+//     console.log(theme);
+//     localStorage.setItem('theme', theme);
+//   };
+  
+//   return (
+//     <ThemeContext.Provider value={{theme, toggleTheme}}>
+//       {props.children}
+//     </ThemeContext.Provider>
+//   )
+// };
+
+// export default ThemeContextProvider;
