@@ -5,6 +5,11 @@ import Work from "components/Work/Work";
 import works from 'data/works';
 
 const Works = () => {
+
+  const shortenTitle = (title) => {
+    return title.length > 15 ? title.substring(0, 7) + "..." : title;
+  }
+
   return (
     <>
       <Header />
@@ -15,7 +20,8 @@ const Works = () => {
         </p>
         <div className="realisations">
           {works.map((work) => (
-            <Work />
+            <Link to='works/'> { shortenTitle(work.title) } </Link>
+            // <Work />
           ))}          
         </div>
       </div>
