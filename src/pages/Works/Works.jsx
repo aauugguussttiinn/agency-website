@@ -20,8 +20,9 @@ const Works = () => {
         </p>
         <div className="realisations">
           {works.map((work) => (
-            <Link to='works/'> { shortenTitle(work.title) } </Link>
-            // <Work />
+            <div className={ work.slug }>
+              <Link to={ work.slug }> { shortenTitle(work.title) } </Link>
+            </div>
           ))}          
         </div>
       </div>
