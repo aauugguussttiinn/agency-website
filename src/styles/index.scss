@@ -1,5 +1,8 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import "./settings";
+@import "pages/Home/home";
+@import "pages/About/about";
+@import "pages/Works/works";
 @import "components/Header/header";
 @import "components/Navigation/navigation";
 @import "components/ToggleButton/toggle-button";
