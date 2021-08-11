@@ -19,7 +19,6 @@ li {
 }
 a {
   text-decoration: none;
-  color: $color-3;
   cursor: pointer;
 }
 a:visited {
@@ -34,6 +33,10 @@ a:visited {
 
   .header {
     background-color: $color-4;
+  }
+
+  a {
+    color: $color-2;
   }
 }
 

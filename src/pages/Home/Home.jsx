@@ -5,11 +5,14 @@ import Presentation from "components/Presentation/Presentation";
 
 const Home = () => {
   return (
-    <div className="home">
-      {/* <Logo /> */}
+    <>
       <Header />
-      <Presentation />
-    </div>
+      <div className="home">
+        {/* <Logo /> */}
+        <Presentation />
+      </div>
+    </>
+
   );
 };
 
