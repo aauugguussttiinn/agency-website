@@ -3,10 +3,11 @@ import { ThemeContext } from 'Context/ThemeContext';
 
 const ToggleButton = () => {
   const {toggleTheme, theme} = useContext(ThemeContext)
+
   
   return (
     <div className="toggleWrapper">
-      <input onClick={ toggleTheme } type="checkbox" className={theme ? "dn tolight" : "dn todark" } id="dn" />
+      <input onChange={ toggleTheme } type="checkbox" className={theme ? "dn tolight" : "dn todark" } id="dn" checked={ theme } />
       <label htmlFor="dn" className="toggle">
         <span className="toggle__handler">
           <span className="crater crater--1"></span>
