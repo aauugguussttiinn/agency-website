@@ -13,15 +13,13 @@ const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route component={NotFound} />
-      </Switch>
-      <Switch>
         <div className={ theme ? "maintheme tolight" : "maintheme todark" }>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/works" exact component={Works} />
           <Route path="/works/:workSlug" exact component={Work} />
         </div>
+        <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
   );
