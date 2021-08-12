@@ -3,7 +3,6 @@ import { ThemeContext } from 'Context/ThemeContext';
 
 const ToggleButton = () => {
   const {toggleTheme, theme} = useContext(ThemeContext)
-
   
   return (
     <div className="toggleWrapper">

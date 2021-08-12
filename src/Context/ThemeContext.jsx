@@ -4,7 +4,17 @@ export const ThemeContext = createContext();
 
 const ThemeContextProvider = (props) => {
 
-  const [theme, setTheme] = useState(localStorage.getItem(`theme`) || false );
+  const stringStorageToBoolean = (stringedValue) => {
+    if (stringedValue === 'true') {
+      return true;
+    } else {
+      return false;
+    };
+  }
+
+  const [theme, setTheme] = useState(stringStorageToBoolean(localStorage.getItem(`theme`)) || false );
+
+
 
   const toggleTheme = () => {
     setTheme(!theme);
