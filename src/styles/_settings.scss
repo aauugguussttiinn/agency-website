@@ -39,6 +39,16 @@ a:visited {
   a {
     color: $color-2;
   }
+
+  .card {
+    background-color: $color-3;
+    border-color: $color-1;
+  }
+
+  .card-header {
+    background-color: $color-4;
+    border-color: $color-1;
+  }
 }
 
 .maintheme.todark {
@@ -46,4 +56,6 @@ a:visited {
   font-family: $font-1;
   background-color: $color-2;
   color: $color-6;
+
+  
 }
