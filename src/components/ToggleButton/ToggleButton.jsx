@@ -6,7 +6,7 @@ const ToggleButton = () => {
   
   return (
     <div className="toggleWrapper">
-      <input onClick={ toggleTheme } type="checkbox" className={theme ? "dn tolight" : "dn todark" } id="dn"/>
+      <input onClick={ toggleTheme } type="checkbox" className={theme ? "dn tolight" : "dn todark" } id="dn" />
       <label htmlFor="dn" className="toggle">
         <span className="toggle__handler">
           <span className="crater crater--1"></span>
