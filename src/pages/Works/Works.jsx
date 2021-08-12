@@ -6,8 +6,8 @@ import works from 'data/works';
 
 const Works = () => {
 
-  const shortenTitle = (title) => {
-    return title.length > 15 ? title.substring(0, 7) + "..." : title;
+  const shortenText = (content) => {
+    return content.length > 15 ? content.substring(0, 7) + "..." : content;
   }
 
   const urlToGet = (workslug) => {
@@ -23,14 +23,28 @@ const Works = () => {
           Découvrez pas à pas comment nous avons été présent pour lancer vos marques préférées.
         </p>
         <div className="realisations">
-          {/* <Switch>
-            <Route path="/works/:workSlug" exact component={Work} />
-          </Switch> */}
+          {/* {works.map((work) => (
+            <div className={ work.slug }>
+              <div class="card text-center">
+                <div class="card-header">
+                  Featured
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"> { work.name } </h5>
+                  <p class="card-text"> { shortenText(work.description) } </p>
+                  <Link to={ urlToGet(work.slug) }> Discover </Link>
+                </div>
+                <div class="card-footer text-muted">
+                  2 days ago
+                </div>
+              </div>
+            </div>
+          ))} */}
           {works.map((work) => (
             <div className={ work.slug }>
-              <Link to={ urlToGet(work.slug) }> { shortenTitle(work.title) } </Link>
+              <Link to={ urlToGet(work.slug) }> { work.name } </Link>
             </div>
-          ))}          
+          ))}    
         </div>
       </div>
     </>
