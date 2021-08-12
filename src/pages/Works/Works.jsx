@@ -22,8 +22,8 @@ const Works = () => {
         <p>
           Découvrez pas à pas comment nous avons été présent pour lancer vos marques préférées.
         </p>
-        <div className="realisations">
-          {/* {works.map((work) => (
+        {/* <div className="realisations row d-flex justify-content-around py-3">
+          {works.map((work) => (
             <div className={ work.slug }>
               <div class="card text-center">
                 <div class="card-header">
