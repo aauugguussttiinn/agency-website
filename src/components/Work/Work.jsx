@@ -5,11 +5,8 @@ import Header from 'components/Header/Header';
 
 
 const Work = () => {
-  console.log('Je vérifie que je rentre bien dans la fonction')
   const { workSlug } = useParams();
   const [currentWork, setCurrentWork] = useState([])
-  console.log('Je vérifie que j arrive à récupérer le bon work')
-  console.log(currentWork)
   const { description, title } = currentWork
 
   useEffect(() => {

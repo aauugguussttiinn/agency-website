@@ -9,19 +9,17 @@ import { ThemeContext } from "Context/ThemeContext";
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
-  // console.log(theme);
 
   return (
     <BrowserRouter>
       <Switch>
-        { console.log(theme)}
-          <div className={ theme ? "maintheme tolight" : "maintheme todark" }>
-            <Route path="/" exact component={Home} />
-            <Route path="/about" exact component={About} />
-            <Route path="/works" exact component={Works} />
-            <Route path="/works/:workSlug" exact component={Work} />
-            {/* <Route component={NotFound} /> */}
-          </div>
+        <div className={ theme ? "maintheme tolight" : "maintheme todark" }>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" exact component={About} />
+          <Route path="/works" exact component={Works} />
+          <Route path="/works/:workSlug" exact component={Work} />
+          {/* <Route component={NotFound} /> */}
+        </div>
       </Switch>
     </BrowserRouter>
   );
